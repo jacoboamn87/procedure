@@ -4,9 +4,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'procedure_manager.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
+    url(r'^api/', include('procedure.urls')),
+    url(r'^interface/', include('interface.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )

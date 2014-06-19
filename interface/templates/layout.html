@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<div id="header" class="container">
+		<h1>Hola!</h1>
+	</div>
+	<div id="main" class="container">
+		{% block main %}
+		{% endblock main %}
+	</div>
+	<div id="header" class="container">
+		<h4>Footer</h4>
+	</div>
+{% endblock body %}
